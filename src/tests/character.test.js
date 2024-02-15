@@ -9,8 +9,8 @@ describe('Character class using object comparison', () => {
         type: 'Bowman',
         health: 100,
         level: 1,
-        attack: 0,
-        defence: 0
+        attack: null,
+        defence: null,
       };
 
       expect(JSON.parse(JSON.stringify(hero))).toEqual(expectedHero);
